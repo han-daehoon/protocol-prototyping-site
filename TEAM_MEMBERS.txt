@@ -5,6 +5,7 @@
 
 nerolation/pglanding-nerolation/Toni Wahrstätter/nero_eth
 carlbeek/pglanding-carlbeek/Carl Beekhuizen/carlbeek
+jochem-brouwer/jochem-research-overview/Jochem Brouwer/JochemBrouwer96
 morph-dev/pglanding-morph-dev/Milos Stankovic/MorphNetrunner
 raxhvl/pglanding-raxhvl/raxhvl/raxhvl
 healthykim/bosulmun/Bosul Mun/1004YUKICHAN
