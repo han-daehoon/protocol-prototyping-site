@@ -180,6 +180,10 @@ async function build() {
         await fs.writeFile(path.join(DIST_DIR, '.nojekyll'), '');
         console.log('✓ Created .nojekyll file');
         
+        // Create CNAME file for custom domain
+        await fs.writeFile(path.join(DIST_DIR, 'CNAME'), 'prototyping.ethereum.foundation');
+        console.log('✓ Created CNAME file for custom domain');
+        
         console.log('\n✨ Build complete! Output in dist/');
         
     } catch (error) {
