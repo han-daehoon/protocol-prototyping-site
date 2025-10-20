@@ -7,47 +7,94 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Background Ethereum logos -->
-    <div class="eth-bg-logo"></div>
-    <div class="eth-bg-logo"></div>
-    <div class="eth-bg-logo"></div>
-    <div class="eth-bg-logo"></div>
-    <div class="eth-bg-logo"></div>
-    
     <header>
         <div class="container">
-            <h1>Protocol Prototyping</h1>
-            <p class="tagline">Ethereum Foundation</p>
+            <div class="header-content">
+                <h1>Protocol Prototyping</h1>
+                <nav class="main-nav">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#team" class="nav-link">Team</a>
+                </nav>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
     <main>
         <div class="container">
-
-            <section class="team-members" id="team-members">
-                <h2 class="section-title">Team Members</h2>
-                <div class="team-members-grid">
-                    <!-- Team members will be dynamically inserted here -->
+            <!-- Hero Section -->
+            <section class="hero" id="hero">
+                <div class="hero-content">
+                    <p class="hero-description">
+                        The <span class="highlight-text">Protocol Prototyping</span> team at the Ethereum Foundation builds end-to-end implementations of new ideas for Ethereum's core protocol. By turning concepts into working prototypes, we explore how potential upgrades behave in practice, helping the community move beyond theory and speculation.
+                    </p>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Scroll to explore</span>
+                    <svg class="scroll-arrow" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="7 13 12 18 17 13"></polyline>
+                        <polyline points="7 6 12 11 17 6"></polyline>
+                    </svg>
                 </div>
             </section>
 
-            <section class="filters">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="CL">Consensus Layer</button>
-                <button class="filter-btn" data-filter="EL">Execution Layer</button>
-                <button class="filter-btn" data-filter="MEV-Boost">MEV-Boost</button>
-                <button class="filter-btn" data-filter="DL">Data Layer</button>
+            <!-- Projects Section -->
+            <section class="section" id="projects">
+                <h2 class="section-title">Projects</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="CL">Consensus Layer</button>
+                    <button class="filter-btn" data-filter="EL">Execution Layer</button>
+                    <button class="filter-btn" data-filter="MEV-Boost">MEV-Boost</button>
+                    <button class="filter-btn" data-filter="DL">Data Layer</button>
+                </div>
+                <div class="team-work" id="team-work">
+                    <!-- Work items will be dynamically inserted here -->
+                </div>
             </section>
-            
-            <section class="team-work" id="team-work">
-                <!-- Work items will be dynamically inserted here -->
+
+
+            <!-- Team Section -->
+            <section class="section" id="team">
+                <h2 class="section-title">Team</h2>
+                <div class="team-members-grid">
+                    <!-- Team members will be dynamically inserted here -->
+                </div>
+                <div class="team-description">
+                    <h3>Join the Protocol Prototyping Team</h3>
+                    <p>Are you interested in joining Protocol Prototyping? We're always looking for talented engineers and researchers passionate about building the future of Ethereum. Even when we're not actively hiring, we'd love to hear from exceptional candidates.</p>
+                    <p>Get in touch: <a href="mailto:prototyping@ethereum.org" class="email-link">prototyping@ethereum.org</a></p>
+                </div>
             </section>
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p>Last updated: <span id="last-updated"></span></p>
+            <div class="footer-content">
+                <p>© 2024 Ethereum Foundation</p>
+                <p>Last updated: <span id="last-updated"></span></p>
+            </div>
         </div>
     </footer>
 
